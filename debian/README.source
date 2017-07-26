@@ -1,0 +1,7 @@
+The upstream tarball is repackaged by
+- removing the non-free file rfc1320.txt
+- removing the line referencing rfc1320.txt from MANIFEST
+
+A script called debian/repack.stub automates this task; it's also called
+from debian/watch, and a get-orig-source target in debian/rules is
+provided.
